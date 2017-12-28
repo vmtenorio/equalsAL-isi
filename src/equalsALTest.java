@@ -25,5 +25,10 @@ public class equalsALTest {
 	public void test1() {
 		assertTrue(list1.equals(list1));
 	}
-
+	
+	// Test que pase por el nodo 4 (salir en el segundo if)
+	@Test
+	public void test2() {
+		assertFalse(list1.equals(new Integer(0)));
+	}
 }
