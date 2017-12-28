@@ -31,4 +31,13 @@ public class equalsALTest {
 	public void test2() {
 		assertFalse(list1.equals(new Integer(0)));
 	}
+	
+	// Test que pase por el nodo 11 (salir en el tercer return)
+	@Test
+	public void test3() {
+		list1.add ("foo");
+		list2.add ("bar");
+		
+		assertFalse(list1.equals(list2));
+	}
 }
