@@ -49,4 +49,13 @@ public class equalsALTest {
 		
 		assertTrue(list1.equals(list2));
 	}
+	
+	//////////////////////////////////////////
+	//		Edge-Pair Coverage		//
+	//////////////////////////////////////////
+	// Solo nos falta un test para el camino [5,6,11], el resto están cubiertos con los anteriores
+	@Test
+	public void test5() {
+		assertTrue(list1.equals(list2));
+	}
 }
