@@ -15,10 +15,15 @@ public class equalsALTest {
 		list1 = new ArrayList<String>();
 		list2 = new ArrayList<String>();
 	}
-
+	
+	////////////////////////////////////////
+	//		Node Coverage		
+	////////////////////////////////////////
+	
+	// Test que pase por el nodo 2 (salir en primer if)
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void test1() {
+		assertTrue(list1.equals(list1));
 	}
 
 }
