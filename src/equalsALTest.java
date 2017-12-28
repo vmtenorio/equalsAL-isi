@@ -32,12 +32,21 @@ public class equalsALTest {
 		assertFalse(list1.equals(new Integer(0)));
 	}
 	
-	// Test que pase por el nodo 11 (salir en el tercer return)
+	// Test que pase por el nodo 9 (salir en el tercer return)
 	@Test
 	public void test3() {
 		list1.add ("foo");
 		list2.add ("bar");
 		
 		assertFalse(list1.equals(list2));
+	}
+	
+	// Test que pasa por el nodo 11 (salir en el último return)
+	@Test
+	public void test4() {
+		list1.add ("foo");
+		list2.add ("foo");
+		
+		assertTrue(list1.equals(list2));
 	}
 }
